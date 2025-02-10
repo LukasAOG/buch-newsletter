@@ -10,6 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
@@ -20,6 +21,8 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            width: 80%;
+            max-width: 600px;
         }
         input {
             padding: 10px;
@@ -39,6 +42,13 @@
         button:hover {
             background: #0056b3;
         }
+        iframe {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            height: 600px;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +59,8 @@
         <button onclick="subscribe()">Abonnieren</button>
         <p id="message" style="color:green; margin-top:10px;"></p>
     </div>
+    
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc06InJQaG2DvWamFLM5fWdIMxiFUjLPVGL0hOH3Oy-KgB6Tw/viewform?usp=dialog" width="100%" height="600px"></iframe>
     
     <script>
         function subscribe() {
@@ -64,3 +76,4 @@
     </script>
 </body>
 </html>
+
